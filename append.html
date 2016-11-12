@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>append</title>
+</head>
+<body>
+<style>
+
+</style>
+<div>foo</div>
+<div class="strong">foo</div>
+<div>foo</div>
+<div>foo</div>
+<script>
+var target = document.querySelectorAll('.strong');//全部見てクラス名strongだけを対象
+	for(var i=0; i<target.length; i++){
+			var append = document.createElement("strong");
+			append.innerHTML = '重要';
+			target[i].appendChild(append);//iで特定の箇所に適用する
+	}
+//target.remove();
+</script>
+</body>
+</html>

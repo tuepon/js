@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<a href="#">link</a>
+<script>
+function method0(str){//callee.callerの使い方
+	console.log(str,arguments.callee.caller);
+}
+function method1(){
+	method0("foo1");
+}
+function method2(){
+	method0("foo2");
+}
+method1();
+method2();
+</script>
+</body>
+</html>

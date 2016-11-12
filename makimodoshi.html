@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<style>
+
+</style>
+<a href="#">link</a>
+<script>
+var foo = 'yyy';
+	(function(){
+		console.log(foo);//yyy
+	})();
+
+	(function(){
+		console.log(foo);//undefined
+		var foo = 'xxx';//xxx
+		console.log(foo);//xxx
+
+	})();
+</script>
+</body>
+</html>

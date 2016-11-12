@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<style>
+
+</style>
+<a href="#" class="foo bar">link</a>
+<script>
+//属性の設定
+// var target = document.querySelector('a');//aタグに適用する
+// target.setAttribute('href','https://www.to-r.net');//URLを指定
+
+//属性の取得
+//var target = document.querySelector('a');
+//console.log(target.getAttribute('href'));
+
+//属性の存在確認
+// var target = document.querySelector('a');
+// if(target.hasAttribute('href')){
+// 	console.log('ok');
+// }else{
+// 	console.log('ng');
+// }
+
+//Classの取得変更(IE10以上)
+var target = document.querySelector('a');
+console.log(target.className);
+target.classList.add("foo2");
+console.log(target.className);
+target.classList.remove("foo");
+console.log(target.className);
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<style>
+
+</style>
+<a href="#">link</a>
+<script>
+	var myArr = [1,2,3,4,5];
+	var newArr = myArr.filter(function(val){
+		return val%2==1;//2で割って余りが1の場合
+	});
+	console.log(newArr);//奇数で出力される
+</script>
+</body>
+</html>

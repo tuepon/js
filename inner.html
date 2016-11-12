@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<style>
+
+</style>
+<div>foo</div>
+<div>foo</div>
+<div>foo</div>
+<div>foo</div>
+
+<script>
+var target = document.querySelectorAll('div');
+for(var i=0;i<target.length;i++){
+	target[i].innerHTML = ((i+1)+target[i].innerHTML);
+}
+//target.innerHTML = 'bar';
+// console.log(target.innerHTML);
+// target.innerHTML = '<b>bar</b>';
+</script>
+</body>
+</html>

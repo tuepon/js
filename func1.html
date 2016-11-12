@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<style>
+
+</style>
+<a href="#">link</a>
+<script>
+var a,b,c;a = "1";
+function myFunc1(){//Func2の親スコープ
+	var b = '2';
+	function myFunc2(){
+		var c = '3';
+		console.log(2,a,b,c);
+	}
+	myFunc2();
+	console.log(1,a,b,c);
+}
+myFunc1();
+console.log(0,a,b,c);
+</script>
+</body>
+</html>
