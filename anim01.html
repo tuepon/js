@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<style>
+.fade{
+	transition: opacity .6s ease;
+	opacity: 1;
+}
+.fade-enter{
+	opacity: 1;
+}
+.fade-leave{
+	opacity: 0;
+}
+</style>
+<button class="open">open</button>
+<button class="close">close</button>
+<div class="box fade">■</div>
+<script>
+var target = document.querySelector('.box');
+document.querySelector('.open').addEventListener("click",function(){
+	target.classList.remove("fade-leave");
+	target.classList.add("fade-enter");
+},false);
+document.querySelector('.close').addEventListener("click",function(){
+	target.classList.remove("fade-enter");
+	target.classList.add("fade-leave");
+},false);
+</script>
+</body>
+</html>

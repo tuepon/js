@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<input type="button" value="c"  class="js-clear">
+<input type="button" value="+" class="js-add">
+<input type="button" value="-" class="js-sub">
+<input type="number" name="ans" class="js-ans">
+<script>
+var calculation ={
+  init : function(){
+    //初期化処理
+    this.events();
+	this.render();
+  },
+  data : {
+    //モデル
+    ans:0
+  },
+  events: function(){
+    //セットイベント
+    document.querySelector(".js-clear").addEventListener("click",this.clear.bind(this));
+    document.querySelector(".js-add").addEventListener("click",this.add.bind(this));
+    document.querySelector(".js-sub").addEventListener("click",this.sub.bind(this));
+  },
+  clear: function(){
+    this.data.ans = 0;
+    this.render();
+  },
+  add: function(){
+    this.data.ans += 1;
+    this.render();
+  },
+  sub: function(){
+    this.data.ans -= 1;
+    this.render();
+  },
+  render: function(){
+    //HTMLの描画
+    document.querySelector(".js-ans").value = this.data.ans;
+  }
+};
+calculation.init();
+</script>
+
+</body>
+</html>

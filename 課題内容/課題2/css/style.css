@@ -1,0 +1,386 @@
+@charset "UTF-8";
+
+/* Global */
+body {
+	color: #222222;
+	background-color:#ffffff;
+	overflow-x: hidden;
+}
+img {
+	max-width: 100%;
+}
+a:link {
+	color: #333;
+	text-decoration: none;
+}
+a:visited {
+	color: inherit;
+}
+a:hover {
+	color: #bde2df;
+	text-decoration: none;
+}
+
+
+/* Navigation Top */
+#header {
+	position: absolute;
+	top:0px;
+	width:100%; 
+	height:auto; 
+	background-color:#ffffff;
+	z-index:100;
+}
+#header #logo {
+	text-align: center;
+	margin: 10px 0;
+}
+#header .logo{
+	font-size:20px;
+	font-weight: bold
+}
+#header .logo__blue{
+	font-size:15px;
+	color:#1b92fe;
+}
+#header .logo__red{
+	color:#fb0007;
+}
+#header #nav {
+	text-align: right;
+	margin: 30px 0 0 0;
+}
+
+#nav ul{
+	float: right;
+	list-style: none;
+	margin: 0;
+}
+#nav ul li{
+	float: left;
+	padding:0 25px;
+}
+#nav ul li:hover{
+	cursor:pointer;
+	color: #a9d3d0;
+}
+#nav ul .active{
+	cursor:pointer;
+	color: #f68f67;
+	font-weight:bold;
+}
+
+
+/* Navigation Change */
+#header.fix {
+	position: fixed;
+	top:0px;
+}
+#header.fix .logo {
+	text-align: center;
+	margin: 5px 0;
+}
+#header.fix .logo img {
+	width: 100px;
+}
+#header.fix #nav {
+	margin: 10px 0;
+}
+
+
+/* General Slides */
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:auto;
+	position: relative;
+	padding: 100px 0;
+}
+.slide h1 {
+	color: #f7c84a;
+	line-height: 1.0em;
+	font-size: 3.8em;
+	font-weight: 400;
+}
+.slide h2 {
+	font-size: 2.5em;
+	padding-bottom:20px;
+	font-weight: 100;
+}
+.slide .img {
+	text-align: center;
+}
+
+/* Slide 1 */ 
+#slide1 {
+	background-color: #2d6899;
+	color: #ffffff;
+	padding-top: 180px;
+}
+
+/* Slide 2 */ 
+#slide2 {
+	background:url('../img/target.jpg') no-repeat center top;
+	color:#ffffff;
+}
+#slide2 .dialog {
+	padding:10px;
+	box-sizing: border-box;
+	background-color: #000000;
+	opacity: 0.75;
+}
+
+
+/* Slide 3 */ 
+#slide3{
+	background-color: #f7c84a;
+}
+#slide3 h2 {
+	text-align:center;
+	padding-bottom:20px;
+}
+
+
+
+
+
+/* Slide 4 */
+
+#slide4{
+	background:url('../img/tam_office.jpg') no-repeat center top;
+	color:#ffffff;
+}
+#slide4 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#ffffff;
+	font-weight: 700;
+}
+#slide4 h2 {
+	font-size: 2em;
+	color: #ffffff;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+#slide4 p.copyright {
+	margin-top:40px;
+	text-align:center;
+	font-size: 0.8em;
+}
+
+#slide4 .fa {
+	font-size: 36px;
+	color: #fff;
+	margin-right: 10px;
+}
+
+/* Tablet */
+@media screen and (max-width: 780px) {
+
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#nav {
+	width:100%;
+	text-align:center;
+	margin:10px 0;
+}
+
+#nav ul {
+	width: 100%;
+	float: center;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+#nav ul li{
+	float: left;
+	width:25%;
+	padding:0;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+	padding:150px 0;
+}
+
+#decorative {
+	display:none;
+}
+
+#content {
+	text-align:center;
+	width:100%;
+}
+
+#slide1 h1 {
+	line-height: 1em;
+}
+#slide1 h2 {
+	line-height: 1em;
+}
+#slide2 h1 {
+	line-height: 1em;
+}
+#slide2 h2 {
+	line-height: 1em;
+}
+#slide3 h1 {
+	line-height: 1em;
+}
+#slide3 h2 {
+	line-height: 1em;
+}
+#slide4 h1 {
+	line-height: 1em;
+}
+#slide4 h2 {
+	line-height: 1em;
+}
+
+}
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#nav {
+	width:100%;
+	margin:5px 0;
+}
+
+#nav ul{
+	width: 100%;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+#nav ul li{
+	float: left;
+	width:25%;
+	padding-bottom: 10px;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+	padding:150px 0;
+}
+
+
+#slide1 h1 {
+	line-height: 1em;
+}
+#slide1 h2 {
+	line-height: 1em;
+}
+#slide2 h1 {
+	line-height: 1em;
+}
+#slide2 h2 {
+	line-height: 1em;
+}
+#slide3 h1 {
+	line-height: 1em;
+}
+#slide3 h2 {
+	line-height: 1em;
+}
+#slide4 h1 {
+	line-height: 1em;
+}
+#slide4 h2 {
+	line-height: 1em;
+}
+
+
+}
+
+
+
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+	margin-right: 20px;
+    font-size: 77%;
+}
+#page-top a {
+    background: #666;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 15px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+#page-top a:hover {
+    text-decoration: none;
+    background: #999;
+}
+
+
+/**
+ * drawer
+ */
+.drawer-button {
+	position:fixed;
+	top: 30px;
+	right: 0;
+	z-index:200;
+}
+.drawer-button a {
+	font-size: 30px;
+	height: 30px;
+	line-height: 30px;
+	padding: 8px 10px;
+	color: #fff;
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 5px 0 0 5px ;
+}
+
+.drawer-body {
+	color: #fff;
+	background: #000;
+	box-sizing: border-box;
+	width: 240px;
+	padding: 15px;
+	/*position: fixed;*/
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin-right: -240px;
+	z-index: 400;
+}
+.drawer-body input[type=text] {
+	width: 80%;
+}
+
+.drawer-open .wrapper {
+	position: absolute;
+	width: 100%;
+	right: 0;
+}
+.drawer-open #page-top,
+.drawer-open .drawer-button {
+	right: inherit;
+}

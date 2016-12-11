@@ -10,11 +10,11 @@
 </style>
 <a href="#">link</a>
 <script>
-var myArr = ['a', 1, 'x', true];
-	console.log(myArr);
-	for(var i = 0; i < myArr.length; i++){
-		console.log(myArr[i]);
-		}
+	var myArr = ['a','b','x'];
+	var newArr = myArr.map(function(val){
+		return val.toUpperCase()
+	});
+		console.log(newArr);
 </script>
 </body>
 </html>

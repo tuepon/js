@@ -21,12 +21,8 @@
 //document.querySelector('#idName').style.backgroundColor = '#c1c1c1';
 var nodeList = document.getElementsByTagName('div');
 for(var i=0;i<nodeList.length;i++){
-	if(i==0 || i==nodeList.length-1){
-		nodeList[i].style.backgroundColor = 'blue';
-	}else{
-		nodeList[i].style.backgroundColor = 'red';
-	}
-
+	nodeList[i].style.backgroundColor = 'red';
+	//ifでやる
 }
 </script>
 </body>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>sample1</title>
+		<style>
+li{
+	display:inline;
+	list-style-type:none;
+}
+img{
+	border:none;
+}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#"><img src="images/jquery.jpg" alt="jQuery"></a></li><!--
+			--><li><a href="#"><img src="images/javascript.jpg" alt="javascript"></a></li><!--
+			--><li><a href="#"><img src="images/css.jpg" alt="CSS"></a></li><!--
+			--><li><a href="#"><img src="images/html.jpg" alt="HTML"></a></li>
+		</ul>
+		<script>
+var target = document.querySelectorAll('img');
+for (var i = 0; i < target.length ; i++){
+	target[i].addEventListener("mouseover",function(){
+		var img = event.currentTarget.getAttribute("src");
+		event.currentTarget.setAttribute("src",img.replace(/^(.+)(\.[a-z]+)$/, "$1_on$2"));
+		
+	},false);
+	target[i].addEventListener("mouseout",function(){
+		var img = event.currentTarget.getAttribute("src");
+		event.currentTarget.setAttribute("src",img.replace(/^(.+)_on(\.[a-z]+)$/, "$1$2"));
+	});
+}
+
+		</script>
+	</body>
+</html>

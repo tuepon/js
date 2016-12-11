@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CodeMatch</title>
+<link href="css/style.css" rel="stylesheet" media="all">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<header>
+<div class="inner clearfix">
+<h1 id="logo"><a href="#"><img src="img/logo.gif" alt=""/></a></h1>
+<nav>
+<ul id="gNav" class="clearfix">
+<li><a href="#">ABOUT</a>
+<div class="sub">
+<ul>
+<li><a href="#">ABOUT01</a></li>
+<li><a href="#">ABOUT02</a></li>
+<li><a href="#">ABOUT03</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#">PRODUCT</a>
+<div class="sub">
+<ul>
+<li><a href="#">PRODUCT01</a></li>
+<li><a href="#">PRODUCT02</a></li>
+<li><a href="#">PRODUCT03</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#">INFORMATION</a>
+<div class="sub">
+<ul>
+<li><a href="#">INFO01</a></li>
+<li><a href="#">INFO02</a></li>
+<li><a href="#">INFO03</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</nav>
+</div><!-- widthfix -->
+</header>
+
+<article class="inner clearfix">
+
+<div id="slideshow">
+<ul>
+<li><img src="img/mv01.jpg" alt=""/></li>
+</ul>
+</div><!-- /#slideshow -->
+
+<div id="feature" class="clearfix">
+<div class="block">
+<p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text. </p>
+<p>&nbsp;</p>
+</div><!-- /.block -->
+
+<div class="block">
+<p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text. </p>
+<p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text. </p>
+</div><!-- /.block -->
+
+<div class="block">
+<p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text. </p>
+<p>text text text text text text text text text text text text text text text text text.</p>
+</div><!-- /.block -->
+
+</div><!-- /#feature -->
+
+<h2>GALLERY</h2>
+<ul id="gallery" class="clearfix">
+<li><img src="img/lb_s_01.jpg" alt=""></li>
+<li><img src="img/lb_s_02.jpg" alt=""></li>
+<li><img src="img/lb_s_03.jpg" alt=""></li>
+<li><img src="img/lb_s_04.jpg" alt=""></li>
+<li><img src="img/lb_s_05.jpg" alt=""></li>
+<li><img src="img/lb_s_06.jpg" alt=""></li>
+</ul>
+
+<h2>NOTE</h2>
+<div  id="note" class="clearfix">
+<ul id="notenav" class="clearfix">
+<li class="select"><a href="#nav01">SPEC</a></li>
+<li><a href="#nav02">PRICE</a></li>
+<li><a href="#nav03">COMMENT</a></li>
+</ul>
+<div id="notecont">
+<div id="nav01" class="active">Spec Spec Spec Spec Spec Spec Spec Spec Spec Spec</div>
+<div id="nav02">Price Price Price Price Price Price Price Price Price Price</div>
+<div id="nav03">comment comment comment comment comment comment comment comment comment comment </div>
+</div><!-- /#notecont -->
+</div><!-- /#note -->
+
+</article>
+
+<footer>
+<p>&copy; Pasonatech Inc.</p>
+</footer>
+<script>
+var items = document.querySelectorAll('a'); //複数のa要素の取得
+	for(var i=0; i<items.length; i++){
+     	window.addEventListener("load",function(){ //画面が呼び出されたときjsを動作
+//		event.preventDefault();//画面遷移するのを防ぐ
+		var nodeList = document.querySelectorAll('div.sub');
+			for(var i=0; i<nodeList.length; i++){
+				nodeList[i].style.display = 'none'; //ここでメニューが閉じた状態
+				//この先をどうして良いのかわからず。。
+			}
+		},false);
+	}
+</script>
+
+</body>
+</html>

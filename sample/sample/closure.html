@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>関数</title>
+</head>
+<body>
+<style>
+
+</style>
+<a href="#">link</a>
+<script>
+var myFunc2 = (function(){//クロージャーの例
+		var count = 0;
+		return function(){
+			count++;
+			console.log(count)
+		};
+})();
+myFunc2();
+</script>
+</body>
+</html>

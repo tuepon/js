@@ -9,12 +9,11 @@
 
 </style>
 <a href="#">link</a>
-<script>
-var myArr = ['a', 1, 'x', true];
-	console.log(myArr);
-	for(var i = 0; i < myArr.length; i++){
-		console.log(myArr[i]);
-		}
+<script> //無名関数anonymousを使ってローカル変数にする
+(function(){
+	var foo = 'cat';
+	console.log(foo);
+})();
 </script>
 </body>
 </html>

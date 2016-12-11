@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+/* Reset
+-----------------------------------------------------*/
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd {
+margin:0;
+padding:0;
+font-weight:normal;
+font-size:100%;
+font-family:futura,"Helvetica Neue",Arial;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, video {
+margin:0;
+padding:0;
+display:block;
+}
+
+img {
+border: none;
+vertical-align: bottom;
+max-width: 100%;
+ }
+
+li {
+list-style-type: none;
+}
+
+figure {
+text-align:center;
+}
+
+body {
+-webkit-text-size-adjust:100%;
+color:#666;
+}
+
+/* Clearfix
+----------------------------------------------------- */
+.clearfix {
+zoom:1
+}
+.clearfix:before, .clearfix:after {
+content:"";
+display:table;
+}
+.clearfix:after {
+clear:both;
+}
+
+
+/* Inner
+----------------------------------------------------- */
+.inner {
+width:950px;
+margin:0 auto;
+}
+
+
+/* Link
+-----------------------------------------------------*/
+a:link, a:visited {
+color:#333;
+text-decoration:none;
+}
+a:hover, a:active {
+}
+
+
+/* Body
+-----------------------------------------------------*/
+body {
+background-color:#edeef0;
+}
+
+
+/* Header
+-----------------------------------------------------*/
+header {
+height:50px;
+margin-bottom:50px;
+position:fixed;
+top:0;
+left:0;
+right:0;
+background-color:#111;
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+-moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+z-index:99999;
+}
+
+header h1#logo {
+margin:12px 0;
+float:left;
+}
+
+header ul {
+width:;
+float:right;
+}
+
+header ul li {
+width:150px;
+float:left;
+border-right:1px solid #333;
+border-left:1px solid #444;
+}
+
+header ul li a:link, header ul li a:visited {
+height:34px;
+padding-top:16px;
+display:block;
+color:#fff;
+font-size:1.1em;
+text-align:center;
+}
+
+header ul li a:hover {
+opacity:0.7;
+background-color:#333;
+}
+
+header ul li ul {}
+
+header ul li ul li {
+width:150px;
+border-right:none;
+border-bottom:1px solid #444;
+background-color:#fff;
+}
+
+header ul li ul li a:link, header ul li ul li a:visited {
+color:#666;
+}
+
+#gNav li ul{
+  visibility: hidden;
+  height: 0px;
+  opacity:0;
+}
+
+#gNav li:hover ul {
+  visibility: visible;
+  height: inherit;
+  opacity:1;
+  transition: 0.5s;
+}
+
+.menu a{
+  display: block;
+}
+
+/* Article
+-----------------------------------------------------*/
+article {
+padding-top:100px;
+}
+
+article h2 {
+margin-bottom:30px;
+padding:8px;
+background-color:#111;
+color:#fff;
+font-size:1.5em;
+}
+
+article #slideshow {
+margin-bottom:20px;
+}
+
+.slide {
+	margin : 0 auto;
+	border : 1px solid black;
+	width: 950px;
+	background-color: black;
+}
+img {
+	max-width: 100%;
+}
+.toolbar {
+	overflow: hidden;
+	text-align: center;
+}
+.nav {
+	display: inline-block;
+}
+#prev {
+	float: left;
+	width: 40px;
+	height:  40px;
+	background: url(img/prev.png) no-repeat;
+}
+#next {
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: url(img/next.png) no-repeat;
+}
+#page {
+	display: inline-block;
+	float: left;
+	margin-top: 8px;
+	height: 32px;
+	color: white;
+}
+
+article #feature {
+margin-bottom:50px;
+}
+
+article #feature .block {
+width:270px;
+margin-left:25px;
+padding:15px;
+float:left;
+background-color:#fff;
+}
+
+article #feature .block:first-child {
+margin-left:0;
+}
+
+article ul#gallery {
+margin-bottom:50px;
+}
+
+article  #gallery li {
+margin-left:10px;
+float:left;
+}
+
+article  #gallery li:first-child {
+margin-left:0;
+}
+
+article #note {
+margin-bottom:50px;
+}
+
+article ul#notenav {}
+
+article ul#notenav li {
+width:200px;
+margin-right:10px;
+float:left;
+}
+
+article ul#notenav li a:link, article ul#notenav li a:visited {
+height:34px;
+padding-top:16px;
+display:block;
+background-color:#fff;
+font-size:1.1em;
+text-align:center;
+}
+
+article ul#notenav li a:hover {
+opacity:0.7;
+}
+
+article ul#notenav li a.active  {
+background-color:#999;
+color:#fff;
+}
+
+article #notecont {
+padding:15px;
+background-color:#fff;
+border:1px solid #999;
+}
+
+
+/* Footer
+-----------------------------------------------------*/
+footer {
+background-color:#666;
+}
+
+footer p {
+padding:20px 0;
+color:#fff;
+text-align:center;
+}

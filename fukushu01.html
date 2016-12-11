@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<style>
+
+</style>
+
+<button>赤</button>
+<button>青</button>
+<button>黄</button>
+<div style="width:100px;height:100px;border:1px solid black"</div>
+<script>
+var target = document.querySelectorAll('button');
+var div = document.querySelector('div'); //divを指定
+	for(i=0;i<target.length;i++){
+//		target.innerHTML=document.querySelector('div')
+		if(target[i].innerHTML=="赤"){
+//			console.log(target[i]);
+			target[i].addEventListener("click",function(){
+				event.preventDefault();
+				div.style.background="red";
+			},false);
+		}
+	}
+</script>
+</body>
+</html>
